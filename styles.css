@@ -136,3 +136,18 @@ img {
     object-fit: contain;
 }
 
+.banner-image {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;     /* Vertically center */
+    width: 100%;             /* Ensure it spans full width */
+    height: auto;            /* Adjust height as needed */
+    margin: 0 auto;          /* Center container itself if needed */
+}
+
+.banner-image img {
+    max-width: 100%;
+    height: auto;             /* Maintain aspect ratio */
+}
+
+
