@@ -17,8 +17,8 @@ body {
     background: #222;
     color: #fff;
     padding: 1rem 0;
+    position: fixed;
     top: 0;
-    height: 15%;
     width: 100%;
     z-index: 1000;
 }
@@ -28,10 +28,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10000;
 }
 
 .nav-links {
@@ -55,16 +51,35 @@ body {
 }
 
 .banner {
-    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    flex-direction: column;
     text-align: center;
     background: #222;
     color: #fff;
-    margin-top: 80px;
+    margin-top: 80px; /* Accounts for the fixed header */
+    padding: 2rem 0;  /* Add vertical spacing */
 }
 
 .banner h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+}
+
+.banner-image {
+    display: flex;
+    justify-content: center; /* Horizontally center the image */
+    align-items: center;     /* Vertically center the image */
+    width: 100%;             /* Full width container */
+    margin: 0 auto;          /* Center the container itself */
+}
+
+.banner-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Ensure the image centers horizontally */
 }
 
 .banner-placeholder {
@@ -117,6 +132,11 @@ body {
     overflow: hidden;
 }
 
+.intro-image img {
+    height: 100%;
+    object-fit: contain;
+}
+
 .footer {
     background: #222;
     color: #fff;
@@ -130,24 +150,3 @@ img {
     height: auto;
     display: block;
 }
-
-.intro-image img {
-    height: 100%;
-    object-fit: contain;
-}
-
-.banner-image {
-    display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center;     /* Vertically center */
-    width: 100%;             /* Ensure it spans full width */
-    height: auto;            /* Adjust height as needed */
-    margin: 0 auto;          /* Center container itself if needed */
-}
-
-.banner-image img {
-    max-width: 100%;
-    height: auto;             /* Maintain aspect ratio */
-}
-
-
